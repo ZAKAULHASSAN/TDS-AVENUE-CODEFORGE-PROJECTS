@@ -1,68 +1,57 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    color: #333;
+    background-color: #f4f4f4;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+.calculator {
+    width: 360px;
+    background-color: #fff;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    color: #333;
-}
-
-/* Header Styles */
-header {
-    background: #4CAF50;
-    color: #fff;
-    padding: 20px 0;
-}
-
-header h1 {
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Section Styles */
-section {
-    padding: 60px 0;
-    text-align: center;
-}
-
-section.dark-bg {
-    background: #f4f4f4;
-}
-
-section h2 {
+#display {
+    width: 95%;
+    height: 50px;
+    text-align: right;
     margin-bottom: 20px;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* Footer Styles */
-footer {
-    background: #333;
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.equal {
+    background-color: #ff9500;
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+}
+
+.equal:hover {
+    background-color: #e08900;
 }
